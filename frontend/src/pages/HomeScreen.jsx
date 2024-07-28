@@ -1,9 +1,9 @@
 import React from "react";
-import DropdownMenuDemo from "../user_define_conp/DropdownMenuDemo.jsx";
+import Header from "@/components/user-components/Header";
 const HomeScreen = () => {
 	return (
 		<>
-			<DropdownMenuDemo />
+			<Header />
 		</>
 	);
 };
