@@ -1,5 +1,5 @@
 import React from "react";
-import Header from "@/components/user-components/Header";
+import Header from "@/components/main-components/Header";
 const HomeScreen = () => {
 	return (
 		<>

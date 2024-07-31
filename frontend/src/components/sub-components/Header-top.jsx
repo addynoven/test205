@@ -1,7 +1,5 @@
-import React from "react";
 import { DropdownMenuRadioGroupDemo } from "../custom-components/DropDown";
-
-function Header() {
+const HeaderTop = () => {
 	return (
 		<>
 			<nav className="flex justify-between items-center  px-10 py-3 bg-gray-50 dark:bg-gray-700">
@@ -57,6 +55,6 @@ function Header() {
 			</nav>
 		</>
 	);
-}
+};
 
-export default Header;
+export default HeaderTop;
