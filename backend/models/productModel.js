@@ -35,6 +35,7 @@ const productSchema = mongoose.Schema(
 		price: { type: Number, required: true },
 		countInStock: { type: Number, required: true },
 		rating: { type: Number, required: true, defaultValue: 0 },
+		isBestSeller: { type: Boolean, required: true, default: false },
 		numReviews: { type: Number, required: true, defaultValue: 0 },
 		reviews: [{ reviewSchema }],
 		manufacturerInformation: { type: String, required: true, default: "China" },

@@ -1,9 +1,12 @@
 import React from "react";
-import Header from "@/components/main-components/Header";
+import HeroSection from "@/components/main-components/HeroSection";
+import ShowcaseSection from "@/components/main-components/ShowcaseSection";
+
 const HomeScreen = () => {
 	return (
 		<>
-			<Header />
+			<HeroSection />
+			<ShowcaseSection />
 		</>
 	);
 };
