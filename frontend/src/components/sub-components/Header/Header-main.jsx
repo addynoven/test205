@@ -5,12 +5,17 @@ import user from "../../../assets/user.svg";
 import heart from "../../../assets/heart.svg";
 import backArrow from "../../../assets/backArrow.svg";
 import shoppingBag from "../../../assets/shoppingBag.svg";
+import { Link } from "react-router-dom";
 const HeaderMain = () => {
 	return (
 		<>
 			<div className="flex items-center gap-4">
-				<img src={Header_img} alt="" className="w-40 " />
-				<img src={Menu} alt="" />
+				<Link to={"/"}>
+					<img src={Header_img} alt="" className="w-40 " />
+				</Link>
+				<button>
+					<img src={Menu} alt="" />
+				</button>
 				<div className="w-[70vw]">
 					<Search className="bg-[#e9ecef] py-6 rounded-sm" />
 				</div>

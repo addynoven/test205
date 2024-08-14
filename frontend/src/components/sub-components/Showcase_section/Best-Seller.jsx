@@ -1,13 +1,11 @@
-import React from "react";
 import ProductCard from "../../custom-components/Product-Card";
-import { useGetProductsQuery } from "@/slices/productSlice";
+import { useGetProductsQuery } from "@/slices/productApiSlice";
 import Loader from "../../custom-components/Loader.jsx";
-
+import Message from "../../custom-components/Message.jsx";
 const BestSeller = () => {
 	const { data: products, isLoading, error } = useGetProductsQuery(); // useGetProductsQuery returns an object with data, isLoading, and error properties
 	const Best_products =
 		products && products.filter((product) => product.isBestSeller === true);
-
 	return (
 		<>
 			{isLoading ? (

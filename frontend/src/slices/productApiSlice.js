@@ -1,6 +1,6 @@
 import { PRODUCTS_URL } from "../constants";
 import { ApiSlice } from "./ApiSlice";
-export const productSlice = ApiSlice.injectEndpoints({
+export const productApiSlice = ApiSlice.injectEndpoints({
 	endpoints: (builder) => ({
 		getProducts: builder.query({
 			query: () => ({
@@ -19,4 +19,4 @@ export const productSlice = ApiSlice.injectEndpoints({
 	}),
 });
 
-export const { useGetProductsQuery, useGetProductsbyIdQuery } = productSlice;
+export const { useGetProductsQuery, useGetProductsbyIdQuery } = productApiSlice;
