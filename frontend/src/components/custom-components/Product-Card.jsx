@@ -28,7 +28,7 @@ const ProductCard = ({ product }) => {
 								</p>
 							</div>
 
-							<div className="flex gap-2 items-center">
+							<div className="flex gap-2 justify-center items-center">
 								<p className="text-[#e20000] font-bold">
 									₹{product.price - 10}
 								</p>
